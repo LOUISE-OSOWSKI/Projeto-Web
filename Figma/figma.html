@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trackly - Nossa Missão</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff; overflow-x: hidden; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            height: 70px;
+            background-color: #fff;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo-slot img {
+            height: 30px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-login { font-size: 14px; margin-right: 10px; cursor: pointer; }
+
+        .btn-outline {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            background: white;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn-black {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            min-height: calc(100vh - 70px);
+            padding-left: 60px;
+        }
+
+        .content-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 40px;
+            z-index: 2;
+        }
+
+        .mission-text {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #1b4332; /* Verde escuro solicitado anteriormente */
+            max-width: 700px;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-hero-black {
+            padding: 18px 35px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-hero-outline {
+            padding: 18px 35px;
+            border: 1px solid #000;
+            background: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .content-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .image-wrapper {
+            width: 120%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-wrapper img {
+            max-width: 90%;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <div class="logo-slot">
+                <img src="Trackly.png" alt="Trackly">
+            </div>
+            <nav>
+                <div class="nav-item">Produtos</div>
+                <div class="nav-item">Soluções</div>
+                <div class="nav-item">Comunidade</div>
+                <div class="nav-item">Recursos</div>
+                <div class="nav-item">Preços</div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <span class="btn-login">Entrar</span>
+            <button class="btn-outline">Fale com a equipe de vendas</button>
+            <button class="btn-black">Comece sem custos</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-left">
+            <p class="mission-text">
+                Nossa missão é, por meio da tecnologia, incentivar a separação correta do lixo, transformando a coleta de resíduos em um processo inteligente, acessível e eficiente. Promovemos a educação ambiental e valorizamos quem faz a diferença todos os dias: cidadãos, catadores e agentes de limpeza urbana. Acreditamos que pequenas ações, quando somadas, geram grandes impactos. Por isso, facilitamos o descarte consciente e construímos, juntos, cidades mais verdes e conscientes.
+            </p>
+            <div class="btn-group">
+                <button class="btn-hero-black">Comece agora</button>
+                <button class="btn-hero-outline">Fale com a equipe de vendas</button>
+            </div>
+        </section>
+
+        <section class="content-right">
+            <div class="image-wrapper">
+                <img src="App.png" alt="Ilustração Trackly">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

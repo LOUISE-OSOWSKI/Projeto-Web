@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trackly - Dropbox Layout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 80px;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        main {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 60px;
+            background-color: #2b2929;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 35px;
+            max-width: 500px;
+        }
+
+        .button-green {
+            width: fit-content;
+            padding: 18px 45px;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .hero-image {
+            flex: 1;
+            background-color: #1e1e1e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 85%;
+            max-height: 85%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="Trackly.png" alt="Trackly">
+        </div>
+        
+        <nav class="header-nav">
+            <a href="#" class="nav-link">Entre em contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-content">
+            <h1 class="hero-title">
+                App de gestão de coleta de resíduos é a nova tecnologia para cidades inteligentes
+            </h1>
+            
+            <p class="hero-description">
+                Trackly solução tecnológica que promete auxiliar os moradores do estado do Paraná a gerenciar a coleta de resíduos.
+            </p>
+
+            <button class="button-green">Saiba Mais</button> 
+        </section>
+
+        <section class="hero-image">
+            <img src="App.png" alt="Interface Trackly App">
+        </section>
+    </main>
+
+</body>
+</html>

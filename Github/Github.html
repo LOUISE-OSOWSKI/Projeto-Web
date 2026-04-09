@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trackly - GitHub Layout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background-color: #0d1117; 
+            color: white; 
+            overflow: hidden; 
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 70px;
+            border-bottom: 1px solid #30363d;
+            background-color: #0d1117;
+        }
+
+        .header-logo img {
+            height: 32px;
+            width: auto;
+            display: block;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-size: 14px;
+            color: #8b949e;
+            cursor: pointer;
+        }
+
+        .btn-header {
+            padding: 5px 15px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            background: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: calc(100vh - 70px);
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #161b22 0%, #0d1117 100%);
+        }
+
+        .hero-title {
+            font-size: 64px;
+            font-weight: 800;
+            max-width: 900px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color: #8b949e;
+            max-width: 750px;
+            margin-bottom: 45px;
+            line-height: 1.5;
+        }
+
+        .form-container {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        input {
+            padding: 14px 20px;
+            width: 350px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background-color: #0d1117;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .btn-submit {
+            padding: 14px 30px;
+            background-color: #238636;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="Trackly.png" alt="Trackly">
+        </div>
+        <div class="header-nav">
+            <span class="nav-item">Plataforma</span>
+            <span class="nav-item">Soluções</span>
+            <span class="nav-item">Recursos</span>
+            <button class="btn-header">Entrar</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="hero-title">O futuro do desenvolvimento sustentável acontece aqui</h1>
+        
+        <p class="hero-subtitle">
+            As ferramentas de gestão evoluem, mas a colaboração permanece. Com o Trackly, moradores e prefeituras do Paraná se unem em uma única plataforma.
+        </p>
+
+        <div class="form-container">
+            <input type="email" placeholder="Digite seu e-mail">
+            <button class="btn-submit">Cadastrar no Trackly</button>
+        </div>
+    </main>
+
+</body>
+</html>
